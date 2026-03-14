@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRUTUS S.A.S - Transporte y Almacenamiento</title>
+    <title>BRUTUS S.A.S | Logística Integral y Mano de Obra Especializada</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Principal -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,12 +18,12 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="https://i.ibb.co/YFzMH9Fm/1761417484341.png" alt="BRUTUS S.A.S">
+                <img src="https://i.ibb.co/1Ys8CnF5/ei-1772892155809-removebg-preview.png" alt="BRUTUS S.A.S - Logística Integral">
             </div>
-            <div class="mobile-menu">
+            <div class="mobile-menu" id="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
-            <nav>
+            <nav id="nav">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
@@ -32,11 +38,16 @@
     <section class="hero" id="inicio">
         <div class="container">
             <div class="hero-content">
-                <h1>Soluciones Logísticas Integrales</h1>
-                <p>Con más de un año de experiencia, BRUTUS S.A.S ofrece servicios de transporte, almacenamiento y distribución de primer nivel para empresas exigentes.</p>
-                <a href="https://wa.me/593989285392?text=Hola%20BRUTUS%20S.A.S,%20me%20interesan%20sus%20servicios%20logísticos" class="btn" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
-                </a>
+                <h1>Logística Integral + Mano de Obra Especializada</h1>
+                <p>Más de un año optimizando cadenas de suministro con tecnología, seguridad y personal capacitado para cada operación.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/593939556922?text=Hola%20BRUTUS%20S.A.S,%20me%20interesan%20sus%20servicios%20logísticos%20y%20de%20mano%20de%20obra" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="#servicios" class="btn btn-outline">
+                        <i class="fas fa-arrow-down"></i> Conocer más
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -45,30 +56,41 @@
     <section class="servicios" id="servicios">
         <div class="container">
             <div class="section-title">
-                <h2>Nuestros Servicios</h2>
-                <p>Ofrecemos soluciones logísticas completas adaptadas a las necesidades específicas de cada cliente.</p>
+                <h2>Soluciones Logísticas</h2>
+                <p>Diseñamos estrategias a medida para cada eslabón de tu cadena de suministro.</p>
             </div>
             <div class="servicios-grid">
                 <div class="servicio-card">
                     <div class="servicio-icon">
                         <i class="fas fa-truck"></i>
                     </div>
-                    <h3>Transporte Especializado</h3>
-                    <p>Servicio de transporte terrestre seguro y eficiente para todo tipo de productos, garantizando la integridad de la carga.</p>
+                    <h3>Transporte Premium</h3>
+                    <p>Flota moderna y monitoreo GPS en tiempo real para garantizar la seguridad de tu carga.</p>
                 </div>
                 <div class="servicio-card">
                     <div class="servicio-icon">
                         <i class="fas fa-warehouse"></i>
                     </div>
-                    <h3>Almacenamiento Seguro</h3>
-                    <p>Espacios de almacenamiento climatizados y con sistemas de seguridad avanzados para proteger tu mercancía.</p>
+                    <h3>Almacenamiento Estratégico</h3>
+                    <p>Centros de distribución con control climático, inventario digital y acceso 24/7.</p>
                 </div>
                 <div class="servicio-card">
                     <div class="servicio-icon">
                         <i class="fas fa-shipping-fast"></i>
                     </div>
-                    <h3>Distribución Eficiente</h3>
-                    <p>Gestión de última milla y distribución puntual que asegura la entrega de productos en el lugar y momento exactos.</p>
+                    <h3>Distribución Inteligente</h3>
+                    <p>Optimización de rutas y entregas de última milla con tracking en tiempo real.</p>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-people-carry-box"></i>
+                    </div>
+                    <h3>Mano de Obra Especializada</h3>
+                    <p>Personal capacitado para estiba, desestiba, carga, descarga y paletización de camiones con máxima eficiencia.</p>
+                    <div class="servicio-tarifas">
+                        <span class="badge-tarifa"><i class="fas fa-clock"></i> Por hora</span>
+                        <span class="badge-tarifa"><i class="fas fa-calendar-day"></i> Por día</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,8 +100,8 @@
     <section class="valores" id="valores">
         <div class="container">
             <div class="section-title">
-                <h2>Nuestros Valores</h2>
-                <p>Los principios que guían cada una de nuestras operaciones y relaciones comerciales.</p>
+                <h2>Nuestra Filosofía</h2>
+                <p>Valores que transforman la logística en una experiencia de confianza.</p>
             </div>
             <div class="valores-grid">
                 <div class="valor-item">
@@ -87,28 +109,28 @@
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Seguridad</h3>
-                    <p>Priorizamos la integridad de tu mercancía en cada etapa del proceso logístico.</p>
+                    <p>Protocolos avanzados para la protección total de tu mercancía y personal.</p>
                 </div>
                 <div class="valor-item">
                     <div class="valor-icon">
                         <i class="fas fa-clock"></i>
                     </div>
                     <h3>Puntualidad</h3>
-                    <p>Comprometidos con los plazos de entrega establecidos para tu tranquilidad.</p>
+                    <p>Cumplimiento riguroso de cronogramas y ventanas de entrega.</p>
                 </div>
                 <div class="valor-item">
                     <div class="valor-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
                     <h3>Confianza</h3>
-                    <p>Construimos relaciones duraderas basadas en la transparencia y honestidad.</p>
+                    <p>Relaciones transparentes basadas en resultados medibles.</p>
                 </div>
                 <div class="valor-item">
                     <div class="valor-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3>Eficiencia</h3>
-                    <p>Optimizamos cada proceso para ofrecer el mejor servicio al mejor precio.</p>
+                    <p>Optimización continua para reducir costos y maximizar resultados.</p>
                 </div>
             </div>
         </div>
@@ -117,10 +139,10 @@
     <!-- CTA -->
     <section class="cta">
         <div class="container">
-            <h2>¿Listo para optimizar tu cadena logística?</h2>
-            <p>Contáctanos hoy mismo y descubre cómo BRUTUS S.A.S puede transformar tu operación logística con soluciones a medida.</p>
-            <a href="https://wa.me/593989285392?text=Hola%20BRUTUS%20S.A.S,%20quisiera%20solicitar%20más%20información%20sobre%20sus%20servicios" class="btn btn-outline" target="_blank">
-                <i class="fab fa-whatsapp"></i> Solicitar Información por WhatsApp
+            <h2>¿Necesitas personal para tu operación?</h2>
+            <p>Contamos con equipo especializado para estiba, desestiba, cargas y descargas. Tarifas flexibles por hora o por día, ¡contáctanos!</p>
+            <a href="https://wa.me/593989285392?text=Hola%20BRUTUS%20S.A.S,%20necesito%20personal%20para%20estiba%20y%20carga%20de%20camiones" class="btn btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i> Solicitar personal ahora
             </a>
         </div>
     </section>
@@ -131,18 +153,18 @@
             <div class="footer-container">
                 <div class="footer-col">
                     <h4>BRUTUS S.A.S</h4>
-                    <p>Líder en soluciones logísticas integrales con más de un año de experiencia en el sector.</p>
+                    <p>Más de un año liderando soluciones logísticas integrales con tecnología, seguridad y personal especializado para cada necesidad.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Contacto</h4>
+                    <h4>Contacto Directo</h4>
                     <ul>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Av. Jorge Villegas, Babahoyo, Los Ríos, Ecuador</span>
+                            <span>Av. Jorge Villegas, Babahoyo, Ecuador</span>
                         </li>
                         <li>
                             <i class="fab fa-whatsapp"></i>
-                            <span>+593 9 8928 5392</span>
+                            <span>+593 93 955 6922</span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
@@ -160,11 +182,12 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 BRUTUS S.A.S - Todos los derechos reservados</p>
+                <p>&copy; 2025 BRUTUS S.A.S - Todos los derechos reservados. Logística integral y mano de obra especializada.</p>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
